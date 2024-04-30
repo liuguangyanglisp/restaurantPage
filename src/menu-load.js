@@ -1,13 +1,12 @@
 import { resetContent } from "./reloadContent";
+import food from "./food.jpg";
 
 export function menuLoad() {
     let contentOfRestaurant = resetContent();
     let name = document.createElement('h1');
     let image = new Image();
-    let price = document.createElement('p');
-    name.textContent = 'spicy noodel with seafood';
-    price.textContent = '20';
+    name.textContent = 'spicy noodel: 100 baht';
+    image.src = food;
     contentOfRestaurant.appendChild(name);
-    contentOfRestaurant.appendChild(price);
     contentOfRestaurant.appendChild(image);
 }

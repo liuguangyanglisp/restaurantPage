@@ -2,13 +2,15 @@ import { resetContent } from "./reloadContent";
 
 export function contactLoad() {
     let contentOfRestaurant = resetContent();
-    let address = document.createElement('p');
-    let tel = document.createElement('p');
-    let openAndCloseTime = document.createElement('p');
-    address.textContent = 'thiland';
-    tel.textContent = '17688898568';
-    openAndCloseTime.textContent = 'Open: 09:00. Close: 24:00'
-    contentOfRestaurant.appendChild(address);
-    contentOfRestaurant.appendChild(tel);
-    contentOfRestaurant.appendChild(openAndCloseTime);
+    let contactContainer = document.createElement('div');
+    let address = document.createElement('h1');
+    let tel = document.createElement('h1');
+    let openAndCloseTime = document.createElement('h1');
+    address.textContent = 'Adress: Thailand';
+    tel.textContent = 'Tel: 17688888888';
+    openAndCloseTime.textContent = 'Open time: 12:00 - 24:00'
+    contactContainer.appendChild(address);
+    contactContainer.appendChild(tel);
+    contactContainer.appendChild(openAndCloseTime);
+    contentOfRestaurant.appendChild(contactContainer);
 }

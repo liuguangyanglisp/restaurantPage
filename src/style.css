@@ -1,0 +1,15 @@
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 3px;
+}
+
+#content {
+    color: black;
+}

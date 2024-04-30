@@ -1,7 +1,8 @@
 import restaurantImg from './restaurant.jpg';
+import { resetContent } from './reloadContent';
 
 export function pageLoad() {
-    let contentOfRestaurant = document.getElementById('content');
+    let contentOfRestaurant = resetContent();
     let headerOfRestaurant = document.createElement('h1');
     let imgOfRestaurant = new Image();
     let introOfRestaurant = document.createElement('p');
@@ -12,4 +13,3 @@ export function pageLoad() {
     contentOfRestaurant.appendChild(imgOfRestaurant);
     contentOfRestaurant.appendChild(introOfRestaurant);
 };
-
